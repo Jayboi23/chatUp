@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "image": "https://img.freepik.com/free-vector/messaging-fun-concept-illustration_114360-1870.jpg?w=740&t=st=1689937191~exp=1689937791~hmac=2466e09f4d518b715bf3cc1b5ded7f00f061ec8e7934f64e3e5036cc5de8eb43",
+        "title": "Welcome!",
+        "description": "Welcome to chatUp, your ultimate messaging app! "
+    },
+    {
+        "id": "2",
+        "image": "https://img.freepik.com/free-vector/group-chat-concept-illustration_114360-1672.jpg?w=740&t=st=1689945037~exp=1689945637~hmac=3263d7f0b855672107d088d57ea5ca2ffbac1beb3ebc21c18fe33b8a272ded42",
+        "title": "Explore Latest Features",
+        "description": "We are thrilled to introduce our latest and most exciting features that will enhance your messaging experience like never before."
+    },
+    {
+        "id": "3",
+        "image": "https://img.freepik.com/free-vector/work-chat-concept-illustration_114360-1268.jpg?w=740&t=st=1689937540~exp=1689938140~hmac=93783533ccd42c5bafbfece1e128b3dc458f237d5dfb909551c9ba31ac34bc12",
+        "title": "Get Started",
+        "description": "Stay tuned for more updates, as we are constantly working to make your messaging journey even more exciting and enjoyable!"
+    }
+]

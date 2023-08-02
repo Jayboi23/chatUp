@@ -1,20 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import ChatList from './Screens/ChatList';
+import ChatScreen from './Screens/ChatScreen';
+import MainBottomTab from './Components/MainBottomTabs';
+import LoginScreen from './Screens/LoginScreen';
+import RegisterScreen from './Screens/RegisterScreen';
+import UsersListScreen from './Screens/UsersListScreen';
+import WelcomeScreen from './Screens/WelcomeScreen';
 
+
+const Stack = createStackNavigator();
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  
+  <NavigationContainer>
+    <Stack.Navigator initialRouteName='Welcome' >
+      <Stack.Screen name='Home' component={MainBottomTab} options={{headerShown: false}}/>
+      <Stack.Screen name='Login' component={LoginScreen} options={{headerShown: false}}/>
+      <Stack.Screen name='Register' component={RegisterScreen} options={{headerTitle: '', headerBackTitle: ''}}/>
+      <Stack.Screen name='Users' component={UsersListScreen}/>
+      <Stack.Screen name='Chats' component={ChatList}/>
+      <Stack.Screen name='Welcome' component={WelcomeScreen} options={{headerShown: false}}/>
+      <Stack.Screen name='ChatScreen' component={ChatScreen}/>
+    </Stack.Navigator>
+  </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
