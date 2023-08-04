@@ -11,7 +11,6 @@ const UsersListScreen = ({navigation}) => {
     user.displayName.toLowerCase().includes(searchQuery.toLowerCase())
   );
     useEffect(() => {
-        // Fetch the authenticated users from Firebase
         const fetchUsers = async () => {
           const usersSnapshot = await db.collection('users').get();
           const users = usersSnapshot.docs.map((doc) => doc.data());
